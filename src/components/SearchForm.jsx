@@ -103,15 +103,15 @@ const SearchForm = () => {
 
     return (
         <div>
-            <div className='search_form'>
+            <div className='search__form'>
                 <input className='input' type='text' placeholder='Enter URL' ref={textInput} />
                 <button className='button' style={{ marginLeft: 15 }} onClick={load}>Load issues</button>
             </div>
             {urlAdress ? <div className="way"><b>{way(urlAdress)}</b></div> : <></>}
-            <div className='issues_list'>
+            <div className='issues__list'>
                 <div>
-                    <div className='issues_name'>Open</div>
-                    <div className='issues_box'>
+                    <div className='issues__name'>Open</div>
+                    <div className='issues__box'>
                         {boards.filter(boardO => boardO.title === 'open').map(board =>
                             <div key={board.id} className='board' onDragOver={(e) => dragOverHandler(e)} onDrop={(e) => dropCardHandler(e, board)}>
                                 {board.issues.map(issue =>
@@ -133,8 +133,8 @@ const SearchForm = () => {
                 </div>
 
                 <div>
-                    <div className='issues_name'>In Progress</div>
-                    <div className='issues_box'>
+                    <div className='issues__name'>In Progress</div>
+                    <div className='issues__box'>
                         {boards.filter(boardIn => boardIn.title === 'in progres').map(board =>
                             <div key={board.id} className='board' onDragOver={(e) => dragOverHandler(e)} onDrop={(e) => dropCardHandler(e, board)}>
                                 {board.issues.map(issue =>
@@ -156,8 +156,8 @@ const SearchForm = () => {
                 </div>
 
                 <div>
-                    <div className='issues_name'>Done</div>
-                    <div className='issues_box'>
+                    <div className='issues__name'>Done</div>
+                    <div className='issues__box'>
                         {boards.filter(boardD => boardD.title === 'done').map(board =>
                             <div key={board.id} className='board' onDragOver={(e) => dragOverHandler(e)} onDrop={(e) => dropCardHandler(e, board)}>
                                 {board.issues.map(issue =>
