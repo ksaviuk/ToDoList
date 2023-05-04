@@ -1,0 +1,86 @@
+.board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(156, 155, 155);
+    height: 626px;
+    overflow-y: auto;
+}
+
+.item {
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    margin: 15px 0 10px 0;
+    cursor: grab;
+}
+.item:active {
+    background-color: rgb(166, 255, 169);
+}
+
+.issue {
+    width: 280px;
+    font-size: 18px;
+}
+
+.search_form {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 0px;
+}
+
+.issues_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.issues_box {
+    background-color: rgb(156, 155, 155);
+    border: 2px solid black;
+    width: 350px;
+    height: 630px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.issues_name {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+
+.input {
+    width: 1000px;
+    padding: 5px 15px;
+    font-size: 14px;
+    border: 2px solid rgb(85, 75, 64);
+    cursor: pointer;
+}
+
+.button {
+    padding: 5px 15px;
+    color: rgb(85, 75, 64);
+    font-size: 14px;
+    background: transparent;
+    border: 2px solid rgb(85, 75, 64);
+    cursor: pointer;
+  }
+
+  .way {
+    padding-left: 50px;
+    color: rgb(29, 29, 96);
+    font-size: large;
+  }
+
+
