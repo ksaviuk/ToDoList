@@ -4,7 +4,7 @@
     flex-direction: column;
     box-sizing: border-box;
     background-color: rgb(156, 155, 155);
-    height: 596px;
+    height: 566px;
     overflow-y: auto;
 }
 
@@ -38,14 +38,14 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .issues__box {
     background-color: rgb(156, 155, 155);
     border: 2px solid black;
     width: 350px;
-    height: 600px;
+    height: 570px;
     overflow-y: auto;
     margin-top: 10px;
 }
