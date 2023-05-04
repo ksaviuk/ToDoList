@@ -4,7 +4,7 @@
     flex-direction: column;
     box-sizing: border-box;
     background-color: rgb(156, 155, 155);
-    height: 606px;
+    height: 596px;
     overflow-y: auto;
 }
 
@@ -38,14 +38,14 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .issues__box {
     background-color: rgb(156, 155, 155);
     border: 2px solid black;
     width: 350px;
-    height: 610px;
+    height: 600px;
     overflow-y: auto;
     margin-top: 10px;
 }
@@ -53,7 +53,6 @@
 .issues__name {
     text-align: center;
     font-size: 18px;
-    padding: 5px 0;
     font-weight: bold;
     font-size: x-large;
     font-family: sans-serif;
